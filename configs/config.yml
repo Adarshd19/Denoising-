@@ -1,0 +1,14 @@
+model:
+    arch: unet
+data:
+    dataset: Data
+training:
+    epoch: 10
+    batch_size: 2
+    report_freq: 2
+    n_workers: 4
+    multi_gpus: True
+    grad_clip: 5
+
+    resume:
+      # '/home/mihir/Desktop/Abhijeet/NasUnet-master/logs/nasunet/train/idrid/20191128-161334/checkpoint.pth.tar'
